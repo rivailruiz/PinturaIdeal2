@@ -2,3 +2,15 @@
 	  width: 80%;
 	  
 }
+.quadrados {
+	width: 50%;
+	height: 84px;
+	background-color: #F2F1EF;
+}
+table {
+    width: 75%;
+    display: table;
+}
+.imagemgaleria {
+	    width: 100%;
+}
