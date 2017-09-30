@@ -14,3 +14,10 @@ table {
 .imagemgaleria {
 	    width: 100%;
 }
+#h3galeria{
+    z-index: 1;
+}
+.posi{
+    position: relative;
+    top: -17px;
+}
