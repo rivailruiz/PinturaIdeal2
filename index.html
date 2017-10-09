@@ -21,7 +21,7 @@
         <li><a href="galeria.html" id="h3galeria" class=" btn-large pulse blue waves-effect waves-light btn modal-trigger "><h3 class="posi">Galeria de fotos</h3></a></li>
       </ul>
 
-      <ul align="center" id="nav-mobile" class="side-nav">
+      <ul align="center" id="nav-mobile" class="side-nav menu">
         <li><a href="#" id="fechar">FECHAR</a></li>
         <li>
             <div class="conteiner">
@@ -338,31 +338,15 @@ function autoplay() {
     $('.carousel').carousel('next');
     setTimeout(autoplay, 4500);
 }
- //para abrir o modal
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
-// Show sideNav
-  $('.button-collapse').sideNav('show');
-  // Hide sideNav
-  $('.button-collapse').sideNav('hide');
-  // Destroy sideNav
-  $('.button-collapse').sideNav('destroy');
+
+
   
   //codigo do Alex
   $(window).bind("scroll", function() {
             $(this).scrollTop() > 170 ? $("body").addClass("floatElement") : $("body").removeClass("floatElement"),
             $(this).scrollTop() > 250 ? $(".pageHeader").addClass("floatHeader") : $(".pageHeader").removeClass("floatHeader")
         })
-        $('.button-collapse').sideNav({
-      menuWidth: 480, // Default is 300
-      edge: 'right', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true, // Choose whether you can drag to open on touch screens,
-      onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
-      onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
-    }
-  );
+    
         </script>
 
   </body>
