@@ -20,8 +20,8 @@
         <li><a href="galeria.html" id="h3galeria" class=" btn-large pulse blue waves-effect waves-light btn modal-trigger "><h3 class="posi">Galeria de fotos</h3></a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Galeria  ______ para sair clique fora --></a></li>
+      <ul align="center" id="nav-mobile" class="side-nav">
+        <li><a href="#" id="fechar">FECHAR</a></li>
         <li>
             <div class="conteiner">
               <table align="center" border="">
@@ -353,6 +353,15 @@ function autoplay() {
             $(this).scrollTop() > 170 ? $("body").addClass("floatElement") : $("body").removeClass("floatElement"),
             $(this).scrollTop() > 250 ? $(".pageHeader").addClass("floatHeader") : $(".pageHeader").removeClass("floatHeader")
         })
+        $('.button-collapse').sideNav({
+      menuWidth: 420, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+      onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+    }
+  );
         </script>
 
   </body>
